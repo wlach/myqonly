@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start",
-    "test:manual": "web-ext run -s ./addon",
+    "test:manual": "web-ext run -t chromium -s ./addon",
     "build": "web-ext build -s ./addon",
     "lint": "./node_modules/eslint/bin/eslint.js .",
     "lint-file": "./node_modules/eslint/bin/eslint.js"
@@ -23,7 +23,7 @@
     "karma-mocha": "^1.3.0",
     "mocha": "^5.2.0",
     "sinon-chrome": "^3.0.1",
-    "web-ext": "^4.0.0"
+    "web-ext": "^7.6.0"
   },
   "dependencies": {
     "js-yaml": "3.13.1"
